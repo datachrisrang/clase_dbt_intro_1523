@@ -3,8 +3,15 @@ version: 2
 sources:
   - name: raw
     schema: raw_data_circle
+    description: data for circle sportwear compay
     tables:
       - name: stock
         identifier: raw_cc_stock
+        description: details about stock
       - name: sales
         identifier: raw_cc_sales
+        description: details about sales
+
+models:
+  - name: stg_raw_sales
+  - name: stg_raw_stock
